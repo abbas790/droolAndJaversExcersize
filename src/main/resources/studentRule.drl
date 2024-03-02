@@ -1,0 +1,9 @@
+
+import com.example.usingJaverseInspringboot.Domain.Student;
+
+rule "check name"
+   when
+      student: Student(name != null)
+   then
+      student.setName("test");
+end

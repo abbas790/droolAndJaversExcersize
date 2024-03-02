@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/javerse
+    username: postgres
+    password: 786@admin
+  jpa:
+     hibernate: 
+       ddl-auto: update
+
+javers:
+  sqlSchema: public
+  sqlSchemaManagementEnabled: true
+  sqlGlobalIdCacheDisabled: false
